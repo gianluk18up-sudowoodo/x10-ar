@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X‑10 | Depredador urbano</title>
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+  </script>
+  <style>
+    body { margin: 0; background: #15171a; color: #f4f5f6; font: 16px system-ui; }
+    main { max-width: 960px; margin: auto; padding: 24px 18px; }
+    h1 { margin: 0; font-size: 48px; }
+    p { color: #c4cad0; }
+    model-viewer {
+      display: block; width: 100%; height: clamp(320px, 62svh, 640px);
+      background: #373d44; border-radius: 16px;
+    }
+    button {
+      position: absolute; right: 16px; bottom: 16px;
+      padding: 12px 18px; border: 0; border-radius: 24px;
+      background: #f4f5f6; color: #15171a; font: inherit; font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>X‑10</h1>
+    <p>Depredador urbano</p>
+    <model-viewer src="./x10.glb"
+      alt="Modelo 3D del longboard eléctrico X‑10"
+      camera-controls touch-action="pan-y" shadow-intensity="1"
+      ar ar-modes="webxr scene-viewer quick-look"
+      ar-placement="floor" ar-scale="fixed">
+      <button type="button" slot="ar-button">Ver a escala real</button>
+    </model-viewer>
+    <p>Girá el X‑10 para explorarlo o colocalo en el piso desde un celular compatible.</p>
+  </main>
+</body>
+</html>
